@@ -34,12 +34,12 @@
  * - 30/07/25 - C.NELHOMME - V1.0 - Creation of the base version
  */
 
-import { Logger } from './Logger.js'
-import { Utils } from './Utils.js'
-import { TemplateManager } from './TemplateManager.js'
-import { Router } from './Router.js'
-import { BlapyBlock } from './BlapyBlock.js'
-import { AjaxService } from './AjaxService.js'
+import { Logger } from '../core/Logger.js'
+import { Utils } from '../core/Utils.js'
+import { TemplateManager } from '../core/TemplateManager.js'
+import { Router } from '../core/Router.js'
+import { BlapyBlock } from '../core/BlapyBlock.js'
+import { AjaxService } from '../core/AjaxService.ts'
 
 
 /**
@@ -178,7 +178,7 @@ export class Blapy {
       noMatchWarning: false,
       linksSelector: '[data-blapy-link]',
     })
-    this.blapyBlocks = new BlapyBlock(this.logger, this.templateManager, this.ajaxService)
+    this.blapyBlocks = new BlapyBlock(this.logger, this.ajaxService)
 
     this.blapyBlocks.initializeBlocks(this.container)
     this.blapyBlocks.setBlapyInstance(this)

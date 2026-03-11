@@ -16,7 +16,7 @@
  * -----------------------------------------------------------------------------------------
  */
 
-import { Blapy } from '../core/Blapy2.js';
+import { Blapy } from '../old/Blapy2.js';
 
 /**
  * HTMLElement extension.

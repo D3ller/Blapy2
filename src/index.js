@@ -16,7 +16,7 @@
  * -----------------------------------------------------------------------------------------
  */
 
-export { Blapy, createBlapy } from './core/Blapy2.js';
+export { Blapy, createBlapy } from './old/Blapy2.js';
 export { Logger } from './core/Logger.js';
 export { Utils } from './core/Utils.js';
 export { AjaxService } from './core/AjaxService.js';
@@ -26,5 +26,5 @@ export { BlapyBlock } from './core/BlapyBlock.js';
 
 export * from './modules/Compatibility.js';
 
-import Blapy from './core/Blapy2.js';
+import Blapy from './old/Blapy2.js';
 export default Blapy;

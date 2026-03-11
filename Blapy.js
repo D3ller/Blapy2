@@ -1,1 +1,0 @@
-dist/blapy2.js
